@@ -156,7 +156,7 @@ export default class Spinner extends React.PureComponent {
         animationType={this.props.animation}
         onRequestClose={() => this._handleOnRequestClose()}
         supportedOrientations={['landscape', 'portrait']}
-        transparent
+        transparent={this.props.transparent || true}
         visible={this.state.visible}
         statusBarTranslucent={true}
       >
